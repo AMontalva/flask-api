@@ -108,16 +108,6 @@ class TestAPI(unittest.TestCase):
         
         
         self.assertEqual(len(data), 0)
-        
-        # session.delete(postA)
-        # session.commit()
-
-        # self.assertEqual(response.status_code, 200)
-        # self.assertEqual(response.mimetype, "application/json")
-
-        # post = json.loads(response.data.decode("ascii"))
-        
-        # self.assertEqual(len(post), 0)
 
     def test_get_non_existent_post(self):
         """ Getting a single post which doesn't exist """
