@@ -84,7 +84,7 @@ class TestAPI(unittest.TestCase):
         self.assertEqual(post["body"], "Still a test")
     
     def test_delete_post(self):
-        """ Getting a single post from a populated database """
+        """ Delete a single post from a populated database """
         postA = models.Post(title="Example Post A", body="Just a test")
         postB = models.Post(title="Example Post B", body="Still a test")
 
